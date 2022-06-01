@@ -7,12 +7,13 @@
 //
 
 #import "HDAppDelegate.h"
+#import <HDTool/HDTool.h>
 
 @implementation HDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [HDCrashProtector openWithOption:HDCrashProtectorOptionAll];
     return YES;
 }
 

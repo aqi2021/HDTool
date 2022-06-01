@@ -21,22 +21,38 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/hsf/HDTool'
+  s.homepage         = 'https://github.com/aqi2021/HDTool'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hsf' => 'huangsf2021@163.com' }
-  s.source           = { :git => 'https://github.com/hsf/HDTool.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/aqi2021/HDTool.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'HDTool/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'HDTool' => ['HDTool/Assets/*.png']
-  # }
+  # s.public_header_files = 'HDTool/Classes/HDTool.h'
+  s.source_files = 'HDTool/Classes/HDTool.h'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # Logger
+  s.subspec 'Logger' do |ss|
+    ss.source_files = 'HDTool/Classes/Logger/*.{h,m}'
+  end
+
+  # CrashProtector
+  s.subspec 'CrashProtector' do |ss|
+    ss.source_files = 'HDTool/Classes/CrashProtector/*.{h,m}'
+  end
+
+   
+   
+#  s.resource_bundles = {
+#   'HDTool' => ['HDTool/Assets/*.png']
+#  }
+  s.frameworks = 'UIKit', 'Foundation'
+#  s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'HDUtil'
+  s.dependency 'HDCategory'
+  
+  
 end

@@ -1,0 +1,43 @@
+PODS:
+  - HDCategory (0.1.1):
+    - HDCategory/Foundation (= 0.1.1)
+    - HDCategory/UIKit (= 0.1.1)
+  - HDCategory/Foundation (0.1.1)
+  - HDCategory/UIKit (0.1.1)
+  - HDTool (0.1.0):
+    - HDCategory
+    - HDTool/CrashProtector (= 0.1.0)
+    - HDTool/Logger (= 0.1.0)
+    - HDUtil
+  - HDTool/CrashProtector (0.1.0):
+    - HDCategory
+    - HDUtil
+  - HDTool/Logger (0.1.0):
+    - HDCategory
+    - HDUtil
+  - HDUtil (0.1.0):
+    - HDUtil/Device (= 0.1.0)
+    - HDUtil/Macro (= 0.1.0)
+  - HDUtil/Device (0.1.0)
+  - HDUtil/Macro (0.1.0)
+
+DEPENDENCIES:
+  - HDTool (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - HDCategory
+    - HDUtil
+
+EXTERNAL SOURCES:
+  HDTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HDCategory: 4b8b7369df160adb6c7eb4c64d88fcfd7e15e740
+  HDTool: 69346bc1f3155a566211e1c4ea9f8b5f53e37b25
+  HDUtil: 33dbd7f8a9a7a86ccb165f116b5ba92b5f3e7ace
+
+PODFILE CHECKSUM: 29081a9f685fd7c189ed3ed5c76e273fad7421dc
+
+COCOAPODS: 1.11.3

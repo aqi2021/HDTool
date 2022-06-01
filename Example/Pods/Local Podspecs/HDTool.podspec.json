@@ -1,0 +1,44 @@
+{
+  "name": "HDTool",
+  "version": "0.1.0",
+  "summary": "A short description of HDTool.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/aqi2021/HDTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hsf": "huangsf2021@163.com"
+  },
+  "source": {
+    "git": "https://github.com/aqi2021/HDTool.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "HDTool/Classes/HDTool.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "HDUtil": [
+
+    ],
+    "HDCategory": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Logger",
+      "source_files": "HDTool/Classes/Logger/*.{h,m}"
+    },
+    {
+      "name": "CrashProtector",
+      "source_files": "HDTool/Classes/CrashProtector/*.{h,m}"
+    }
+  ]
+}
